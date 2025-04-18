@@ -1,0 +1,38 @@
+{
+  "name": "tg-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rimskayama/bot.git",
+  "author": "rimskayama <rimskayama@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "^5.1.14",
+    "axios": "^1.8.3",
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.15.0",
+    "telegraf": "^4.16.3",
+    "telegraf-session-local": "^2.1.1",
+    "telegraf-session-mongodb": "^2.0.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/api/index.js",
+    "dev": "nodemon --watch api -verbose --exec \"ts-node api/index.ts\"",
+    "format": "prettier --write \"api/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/dotenv": "^8.2.3",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  }
+}
